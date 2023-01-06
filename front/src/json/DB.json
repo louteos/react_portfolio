@@ -1,0 +1,125 @@
+{
+    "naviDB" : [
+        { "subject" : "ABOUT", "href" : "#about" },
+        { "subject" : "PROCESS", "href" : "#process" },
+        { "subject" : "PROJECT", "href" : "#project" },
+        { "subject" : "PRE-INTEVIEW", "href" : "#preinterview" },
+        { "subject" : "CONTACT", "href" : "#contact" },
+        { "subject" : "GITHUB", "href" : "https://github.com/louteos" }
+    ],
+
+
+    "aboutDB": [
+        { "subject" : "#name", "text" : "김예슬" },
+        { "subject" : "#birth", "text" : "1993.12.28" },
+        { "subject" : "#e-mail", "text" : "dime4110@naver.com" },
+        { "subject" : "#adress", "text" : "경기 광주시 거주" },
+        { "subject" : "#certificate", "text" : ["2018.02 충남대학교 행정학과 졸업\n", "2021.05 운전면허 1종 보통\n", "2023.03 NCS 과정 수료\n", "2023.00 웹기능사\n", "2023.00 정보처리기능사"] }
+    ],
+
+
+    "abilityDB": [
+        {
+            "Language" : [
+                { "skill": "HTML5/CSS3", "percent" : "5", "img" : "/img/ability/htmlcss.png" },
+                { "skill": "SCSS", "percent": "15", "img" : "/img/ability/sass.png" },
+                { "skill": "JavaScript", "percent": "25", "img" : "/img/ability/js.png" },
+                { "skill": "jQuery", "percent": "35", "img" : "/img/ability/jquery.png" }
+            ],
+        
+            "Front" :[
+                { "skill": "React", "percent": "45", "img" : "/img/ability/react.png" }
+            ],
+            
+            "Back" :[
+                { "skill": "Node", "percent": "55", "img" : "/img/ability/node.png" }
+            ],
+            
+            "DB" :[
+                { "skill": "mySQL", "percent": "65", "img" : "/img/ability/mysql.png" }
+            ],
+            
+            "Library":[
+                { "skill": "Bootstrap", "percent": "75", "img" : "/img/ability/bootstrap.png" }
+            ]
+        },
+            
+        {
+            "ETC": [
+                { "skill" : "Github", "img" : "/img/ability/github.png"},
+                { "skill" : "Figma", "img" : "/img/ability/figma.png"},
+                { "skill" : "Photoshop", "img" : "/img/ability/photoshop.png"},
+                { "skill" : "Notion", "img" : "/img/ability/notion.png"}
+            ]
+        }
+    ],
+
+
+    "processDB" : [
+        { "step": "01", "subject": "기획 및 디자인", "text": "최적화와 유지보수, 협업을 위한 효율적인 커스터마이징으로 화면 구현" },
+        { "step": "02", "subject": "DB아키텍처 설계", "text": "유지보수를 위한 효율적인 데이터베이스 구조 설계" },
+        { "step": "03", "subject": "퍼블리싱", "text": "커스터마이징을 최소화한 프레임워크의 선정" },
+        { "step": "04", "subject": "커스터마이징", "text": "최적화와 유지보수, 협업을 위한 효율적인 커스터마이징으로 화면 구현" },
+        { "step": "05", "subject": "배포 및 유지보수", "text": "웹사이트의 배포 및 사후 유지보수" }
+    ],
+
+
+    "projectDB" : [
+        {
+            "title" : "Portfolio",
+            "time" : "4주",
+            "work" : "1인 개발",
+            "hash" :  ["#UI/UX","#React","#Bootstrap", "#반응형"],
+            "cls" : "pj_portfolio",
+            "href" : ["https://github.com/louteos", "https://dime4110.cafe24.com"],
+            "ex" : "반응형 부트스트랩을 기반으로 한 싱글페이지 포트폴리오사이트입니다.\n가시성과 최적화를 중심으로 기획하였으며, React를 이용하여 작업했습니다."
+        },
+        {
+            "title" : "React",
+            "time" : "1주",
+            "work" : "1인 개발",
+            "hash" :  ["#UI/UX","#React","#MUI", "#반응형"],
+            "cls" : "pj_react",
+            "href" : ["https://github.com/louteos", "https://dime4110.cafe24.com"],
+            "ex" : "반응형 부트스트랩을 기반으로 한 싱글페이지 포트폴리오사이트입니다.\n가시성과 최적화를 중심으로 기획하였으며, React를 이용하여 작업했습니다."
+        },
+        {
+            "title" : "Gnuboard",
+            "time" : "4주",
+            "work" : "1인 개발",
+            "hash" :  ["#UI/UX","#Gnuboard","#Bootstrap", "#반응형"],
+            "cls" : "pj_sir",
+            "href" : ["https://github.com/louteos", "https://dime4110.cafe24.com"],
+            "ex" : "반응형 부트스트랩을 기반으로 한 싱글페이지 포트폴리오사이트입니다.\n가시성과 최적화를 중심으로 기획하였으며, React를 이용하여 작업했습니다."
+        },
+        {
+            "title" : "Portfolio",
+            "time" : "4주",
+            "work" : "1인 개발",
+            "hash" :  ["#UI/UX","#React","#Bootstrap", "#반응형"],
+            "cls" : "pj_app",
+            "href" : ["https://github.com/louteos", "https://dime4110.cafe24.com"],
+            "ex" : "반응형 부트스트랩을 기반으로 한 싱글페이지 포트폴리오사이트입니다.\n가시성과 최적화를 중심으로 기획하였으며, React를 이용하여 작업했습니다."
+        }
+    ],
+
+
+  "preinterviewDB" : [
+        {
+            "subject" : "전공과 다른 직무로 오게 된 이유가 무엇인가요?",
+            "content" : "10여년 전만 해도 개발자라는 직군에 대해서는 나와는 먼 분야라고 생각했었으나 그 10년에 가까운 시간이 지나는 동안 상상도 못할 속도로 발전했으며 코로나19로 인한 사회의 변화는 IT직군의 중요성이 더욱 높아졌습니다. 장기적으로 보았을 때 앞으로도 좀 더 나은 삶을 위해 진화할 일만이 남은, 발전가능성이 무궁무진한 분야라고 생각하여 도전하게 되었습니다."
+        },
+        {
+            "subject" : "수료과정에서 힘든 부분은 무엇이었으며, 그를 어떻게 해낼 수 있었나요?",
+            "content" : "초,중,고 학창시절의 컴퓨터 수업시간이나 엑셀을 공부하며 접한 함수정도가 최대였습니다. 지식이 부족한 만큼 시작하는 것이 가장 막막한 부분이었는데 IT업계가 커지며 책과 동영상플랫폼, 커뮤니티 역시 활성화되어 정보를 얻기에는 부족함이 없었습니다."
+        },
+        {
+            "subject" : "본인의 강점과 약점은 무엇인가요?",
+            "content" : "흥미분야에 깊게 파고드는 성향이 상당히 짙은 편이며, 단순한 암기보다는 이해를 통한 응용을 좋아합니다. '왜' 그렇게 되는가를 이해할 때까지 파고들어 답을 얻어내는 것에 큰 즐거움을 느낍니다. 이 점은 반대로 말하자면 흥미가 없는 분야에는 관심을 두지 않아 습득이 느리다고 볼 수 있겠습니다만, 타인에게 폐를 끼치는 것을 꺼리는 책임감으로 중화시켜 주어진 일에 대해서는 상당부분 상쇄시키고 있겠습니다."
+        },
+        {
+            "subject" : "목표가 무엇인가요? 5년 후 자신의 모습은 어떨 것 같나요?",
+            "content" : "지금 당장의 목표라고 한다면 어디서든 내보일 수 있는 대표프로젝트에 주요인원으로 참여하는 것입니다. 시간이 지나 좀 더 능숙해지면 프로젝트를 리드하며 끌어갈 수 있는 숙련된 개발자로 성장하였으리라 예상하고 기대합니다."
+        }    
+    ]
+}
