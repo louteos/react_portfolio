@@ -1,12 +1,12 @@
 {
-  "name": "nodebreactf",
+  "name": "react_portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "server": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "front" : "cd front && npm start",
+    "front": "cd front && npm start",
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run front\""
   },
   "keywords": [],

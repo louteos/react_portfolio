@@ -1,19 +1,24 @@
 import DB from '../../json/DB.json';
 import React from 'react';
+import { useState } from 'react';
 
 function Ability(props) {
+
+    const [percent, updatePercent] = useState(0);
+
     const ability = DB.abilityDB[0];
     const abilityE = DB.abilityDB[1].ETC;
     const keyArr = Object.keys(ability);
     const valArr = Object.values(ability);
-
     const ekeyArr = Object.values(abilityE);
 
     return(
-        <div className='abilityDiv d-flex flex-column justify-content-between'>
+        <div className='abilityDiv d-none d-md-flex flex-column justify-content-evenly justify-content-md-between pe-md-5'>
 
-            <div className='mainSkill'>
-                <strong class='title'>MAIN SKILL</strong>
+            <div className='mainSkill col'>
+
+                <div className='titlebox text-center'><strong class='title'>MAIN SKILL</strong></div>
+                
                 <div className='skills'>
                 {
                     valArr.map((item,index)=>{
@@ -25,11 +30,11 @@ function Ability(props) {
                                     item.map((k,i)=>{
                                         return(
                                             <div className='d-flex m-2' key={i}>
-                                                <div className='skillName d-flex align-items-center col-2'>
+                                                <div className='skillName d-flex align-items-center col-3'>
                                                     <img src={k.img}></img>
                                                     <span>{k.skill}</span>
                                                 </div>
-                                                <div className='progress col-6'>
+                                                <div className='progress col-8'>
                                                     <div className='progress-bar' style={ {width: `${k.percent}%`} } aria-valuenow={k.percent} aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span>{k.percent}%</span>
@@ -44,8 +49,9 @@ function Ability(props) {
                 </div>
             </div>
 
-            <div className='etcSkill'>
-                <strong class='title'>ETC.</strong>
+            <div className='etcSkill col'>
+                <div className='titlebox text-center'><strong class='title'>ETC.</strong></div>
+                
                 <div className='skills d-flex justify-content-between'>
 
                     {
@@ -57,14 +63,8 @@ function Ability(props) {
                                 </div>  
                             )
                         })
-                    }
+                    }      
 
-                    
-
-
-
-                      
-                                        
                 </div>
             </div>
         </div>

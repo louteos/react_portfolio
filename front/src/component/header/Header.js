@@ -29,9 +29,9 @@ function Header(props){
   }, []);
   
     return(
-        <header ref={targetRef} id="hd" className="d-flex justify-content-between align-items-center px-lg-5 py-2 fixed-top">
+        <header ref={targetRef} id="hd" className="d-flex justify-content-between align-items-center px-lg-5 fixed-top">
           <h1 className="mb-0">
-            <a href="#intro" className="d-block">
+            <a href={targetRef} className="d-block">
               <Logo></Logo>
             </a>
           </h1>

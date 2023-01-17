@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {Section} from 'react-fullpage';
 import DB from '../../json/DB.json';
 
 const Preinterview = (props) => {
+
   const [toggleStatus, toggleStatusfun] = useState(false);
   const [pStatus, pStatusfun] = useState(true);
   const interview = DB.preinterviewDB
@@ -35,8 +36,11 @@ const Preinterview = (props) => {
           }
         </ul>
       </div>
+
     </Section>
   )
 }
+
+
 
 export default Preinterview;

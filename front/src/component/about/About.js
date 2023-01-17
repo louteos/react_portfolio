@@ -13,8 +13,8 @@ function About(props) {
     return (
         <Section id={props.id}>
 
-            <div className='d-flex justify-content-center'>
-                <div className='aboutdiv d-flex flex-column justify-content-around col-5'>
+            <div className='d-block d-md-flex justify-content-center'>
+                <div className='aboutdiv d-flex flex-column justify-content-between col-12 col-md-5'>
                     <div className='titlebox text-center'>
                         <strong className="title">ABOUT ME</strong>
 
@@ -38,19 +38,23 @@ function About(props) {
                             <a href=""><FaComment /></a>
                         </div>
                     </div>
-                    <div>
-                        <div className='titlebox text-center'>
-                            <strong class="title">TAG</strong></div>
+                    <div className='mb-3 mb-md-0'>
+                        <div className='titlebox text-center d-block'>
+                            <strong class="title">TAG</strong>
+                        </div>
                         <div className='text-center'>
                             #YESCORD #2차원의선으로 #4차원을잇다<br />
                             #화음을맞추는 #프론트엔드개발자 #김예슬입니다
                         </div>
-
                     </div>
                 </div>
 
-                <div className='skilldiv titlebox d-block col-5 text-cetner'>
+                
 
+                <div className='skilldiv titlebox d-block col-12 col-md-5 text-cetner'>
+                <div className='titlebox text-center d-block d-md-none'>
+                    <strong class="title">ABILITY</strong>
+                </div>
                     <Ability></Ability>
                 </div>
             </div>

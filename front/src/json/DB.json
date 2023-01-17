@@ -14,7 +14,7 @@
         { "subject" : "#birth", "text" : "1993.12.28" },
         { "subject" : "#e-mail", "text" : "dime4110@naver.com" },
         { "subject" : "#adress", "text" : "경기 광주시 거주" },
-        { "subject" : "#certificate", "text" : ["2018.02 충남대학교 행정학과 졸업\n", "2021.05 운전면허 1종 보통\n", "2023.03 NCS 과정 수료\n", "2023.00 웹기능사\n", "2023.00 정보처리기능사"] }
+        { "subject" : "#certificate", "text" : ["2018.02 충남대학교 행정학과 졸업\n", "2021.05 운전면허 1종 보통\n", "2023.03 NCS 과정 수료\n", "2023.04 SQLD\n", "2023.00 정보처리기사"] }
     ],
 
 
