@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react_portfolio/static/css/main.dc140620.css",
+    "main.js": "/react_portfolio/static/js/main.d89e97e0.js",
+    "static/js/787.36f1cc3e.chunk.js": "/react_portfolio/static/js/787.36f1cc3e.chunk.js",
+    "static/media/NanumSquareNeo-bRg.ttf": "/react_portfolio/static/media/NanumSquareNeo-bRg.dc621da24afcf6c33e03.ttf",
+    "static/media/NanumSquareNeo-cBd.ttf": "/react_portfolio/static/media/NanumSquareNeo-cBd.2bf6888760d6cd8ba7c1.ttf",
+    "static/media/NanumSquareNeo-dEb.ttf": "/react_portfolio/static/media/NanumSquareNeo-dEb.f7379c1cf24d7c08b6ee.ttf",
+    "static/media/NanumSquareNeo-eHv.ttf": "/react_portfolio/static/media/NanumSquareNeo-eHv.fbea4b3da8b8e421a165.ttf",
+    "index.html": "/react_portfolio/index.html",
+    "main.dc140620.css.map": "/react_portfolio/static/css/main.dc140620.css.map",
+    "main.d89e97e0.js.map": "/react_portfolio/static/js/main.d89e97e0.js.map",
+    "787.36f1cc3e.chunk.js.map": "/react_portfolio/static/js/787.36f1cc3e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc140620.css",
+    "static/js/main.d89e97e0.js"
+  ]
+}
