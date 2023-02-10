@@ -38,7 +38,7 @@ function About(props) {
                             <a href=""><FaComment /></a>
                         </div>
                     </div>
-                    <div className='mb-3 mb-md-0'>
+                    <div className='d-none d-md-block mb-3 mb-md-0'>
                         <div className='titlebox text-center d-block'>
                             <strong class="title">TAG</strong>
                         </div>
@@ -52,9 +52,6 @@ function About(props) {
                 
 
                 <div className='skilldiv titlebox d-block col-12 col-md-5 text-cetner'>
-                <div className='titlebox text-center d-block d-md-none'>
-                    <strong class="title">ABILITY</strong>
-                </div>
                     <Ability></Ability>
                 </div>
             </div>

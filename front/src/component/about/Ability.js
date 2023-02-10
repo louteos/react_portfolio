@@ -13,7 +13,7 @@ function Ability(props) {
     const ekeyArr = Object.values(abilityE);
 
     return(
-        <div className='abilityDiv d-none d-md-flex flex-column justify-content-evenly justify-content-md-between pe-md-5'>
+        <div className='abilityDiv d-flex flex-column justify-content-evenly justify-content-md-between pe-md-5'>
 
             <div className='mainSkill col'>
 

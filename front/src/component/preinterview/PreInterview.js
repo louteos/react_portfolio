@@ -20,7 +20,7 @@ const Preinterview = (props) => {
           }>모두보기</button>
         </div>
 
-        <ul className={toggleStatus ? 'openup' : ''}>
+        <ul className={toggleStatus ? 'open' : ''}>
           {
             interview.map((item, index) => {
               return (

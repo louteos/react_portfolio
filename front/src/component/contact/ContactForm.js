@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 
@@ -7,7 +6,6 @@ function ContactForm() {
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors }
     } = useForm();
     const onSubmit = (data) => {
@@ -38,19 +36,9 @@ function ContactForm() {
 
                     <span className="text-center px-2">@</span>
 
-                    <div className="form-group col selectBox">
-                        <select className="fs fs-t" id="mailAd" {...register("mailAd", { required: true })}>
-                            <option disabled selected>SELECT</option>
-                            <option value="구글">gmail.com</option>
-                            <option value="네이버">naver.com</option>
-                            <option value="다음">daum.net</option>
-                            <option value="self">직접입력</option>
-                        </select>
+                    <div className="form-group col">
+                        <input type="text" className="fs fs-t" id="mail" {...register("mail", { required: true })} placeholder="ADRESS" />
                         {errors.mail && <p>상세주소를 입력해주세요</p>}
-
-                        <div className="d-none p-0" id="selfAd">
-                            <div className="col-10 p-0"><input type="text" className="fs fs-t" name="mail" /></div>
-                        </div>
                     </div>
                 </div>
 

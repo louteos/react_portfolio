@@ -67,39 +67,33 @@
     "projectDB" : [
         {
             "title" : "Portfolio",
+            "img" : "",
             "time" : "4주",
             "work" : "1인 개발",
-            "hash" :  ["#UI/UX","#React","#Bootstrap", "#반응형"],
+            "hash" :  ["#UI/UX","#React", "#Node", "#Bootstrap", "#반응형"],
             "cls" : "pj_portfolio",
             "href" : ["https://github.com/louteos", "https://dime4110.cafe24.com"],
             "ex" : "반응형 부트스트랩을 기반으로 한 싱글페이지 포트폴리오사이트입니다.\n가시성과 최적화를 중심으로 기획하였으며, React를 이용하여 작업했습니다."
         },
         {
-            "title" : "React",
-            "time" : "1주",
+            "title" : "한강달빛야시장",
+            "img" : "",
+            "time" : "3주",
             "work" : "1인 개발",
-            "hash" :  ["#UI/UX","#React","#MUI", "#반응형"],
+            "hash" :  ["#UI/UX","#React", "#Node", "#Styled-Component", "#반응형"],
             "cls" : "pj_react",
             "href" : ["https://github.com/louteos", "https://dime4110.cafe24.com"],
-            "ex" : "반응형 부트스트랩을 기반으로 한 싱글페이지 포트폴리오사이트입니다.\n가시성과 최적화를 중심으로 기획하였으며, React를 이용하여 작업했습니다."
+            "ex" : "서울시 주관 한강달빛야시장의 소개페이지를 리뉴얼했습니다.\n가시성 상향을 중심으로 기획하였습니다.\nStyled Component 라이브러리를 이용하였으며, 게시판은 Node로 작업했습니다."
         },
         {
-            "title" : "Gnuboard",
-            "time" : "4주",
+            "title" : "바른이비인후과",
+            "img" : "",
+            "time" : "2주",
             "work" : "1인 개발",
             "hash" :  ["#UI/UX","#Gnuboard","#Bootstrap", "#반응형"],
             "cls" : "pj_sir",
             "href" : ["https://github.com/louteos", "https://dime4110.cafe24.com"],
-            "ex" : "반응형 부트스트랩을 기반으로 한 싱글페이지 포트폴리오사이트입니다.\n가시성과 최적화를 중심으로 기획하였으며, React를 이용하여 작업했습니다."
-        },
-        {
-            "title" : "Portfolio",
-            "time" : "4주",
-            "work" : "1인 개발",
-            "hash" :  ["#UI/UX","#React","#Bootstrap", "#반응형"],
-            "cls" : "pj_app",
-            "href" : ["https://github.com/louteos", "https://dime4110.cafe24.com"],
-            "ex" : "반응형 부트스트랩을 기반으로 한 싱글페이지 포트폴리오사이트입니다.\n가시성과 최적화를 중심으로 기획하였으며, React를 이용하여 작업했습니다."
+            "ex" : "경기도 광주시에 위치한 바른이비인후과 병원 사이트를 반응형웹으로 리뉴얼했습니다.\n그누보드 작업분입니다."
         }
     ],
 
