@@ -9,6 +9,6 @@ app.get('/', (req,res) => { // get, post, use(서버 자체에서 라우터 만�
   res.send({message:'hello'});
 });
 
-app.listen(8080, ()=>{ // listen: 실제 실행문
-  console.log('server is running on 8080')
+app.listen(8000, ()=>{ // listen: 실제 실행문
+  console.log('server is running on 8000')
 })

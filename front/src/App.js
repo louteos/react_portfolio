@@ -16,7 +16,7 @@ export default function MainPage() {
   };
   
   return (
-    <div>
+    <>
     <Header></Header>
     <SectionsContainer {...options}>
       <Intro id="intro"></Intro>
@@ -26,6 +26,6 @@ export default function MainPage() {
       <Preinterview id="preinterview"></Preinterview>
       <Contact id="contact"></Contact>
     </SectionsContainer>
-    </div>
+    </>
   );
 }

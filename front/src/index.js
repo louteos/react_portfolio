@@ -5,7 +5,6 @@ import './css/layout.scss';
 import MainPage from './App';
 import reportWebVitals from './reportWebVitals';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <MainPage />

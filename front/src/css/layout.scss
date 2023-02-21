@@ -68,6 +68,11 @@ li {
         font-weight: 800;
     }
 
+    h4 {
+        font-family: "NanumSquareNeoB";
+        font-weight: 700;
+    }
+
     a {
         color: black
     }
@@ -342,6 +347,46 @@ li {
             right: 0;
         }
     }
+
+    @media(min-width: 768px){
+        > div{
+            position: absolute;
+            padding: 1.5rem;
+            width: 230px; height: 230px;
+            border: 1px solid white;
+        }
+
+        .processbox_1{
+            top: 15rem; left: 20rem;
+        }
+
+        .processbox_2{
+            top: 15rem; left: 20rem;
+        }
+
+        .processbox_3{
+            top: 15rem; left: 20rem;
+        }
+
+        .processbox_4{
+            top: 15rem; left: 20rem;
+        }
+
+        .processbox_5{
+            top: 15rem; left: 20rem;
+        }
+
+        th{
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        th.step{
+            font-size: 2rem;
+            text-decoration: underline;
+            text-underline-offset: 8px;
+        }
+    }
     
 }
 
@@ -590,11 +635,6 @@ li {
         font-family: "NanumSquareNeoEB";
     }
 
-    .infoagree span a {
-        font-size: .75rem;
-        color: #DCD5CF;
-    }
-
     input[type="checkbox"] {
         border-radius: 50%;
         appearance: none;
@@ -652,48 +692,47 @@ li {
         font-weight: 600;
     }
 
+    .popagree{
+        background: none;
+        border: none;
+        color: #DCD5CF;
+        font-size: .75rem;
+    }
+
 }
 
-body.show::before {
-    content: '';
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 11;
+// modal
+.popup_bg{
+    width: 100vw; height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    transform: translate(-2rem, -15.6rem);
 }
 
-#popup_agree {
-    display: none;
-    margin: auto;
+.popup{
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+    padding: 2rem 3rem;
+    width: 50%; height: auto;
+
+    @media(max-width:767px){
+        width: 70%; height: 70%;
+    }
+
     background-color: white;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    max-width: 50vw;
-    max-height: 50%;
-    overflow: auto;
-    padding: 1rem 3rem;
-    z-index: 2000;
-    font-size: .75rem;
-}
-
-body.show #popup_agree {
-    display: block;
-}
-
-#popup_agree button {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 50%;
-    padding: 0.5rem 1rem;
     border: 1px solid #DCD5CF;
-    background-color: white;
+    text-align: left;
+    overflow: scroll;
+    z-index: 2000;
+
+    button{
+        display: flex;
+        margin: auto;
+        border: 1px solid rgba(0,0,0,0.3);
+        padding: .3rem 1rem;
+        background-color: white;
+    }
 }
+
 /* Change the color to your own background color */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
