@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="reactSQL">
+
+    <select id="selectPreinterview">
+        SELECT
+        *
+        FROM
+        greensn7447.lout_preinterview_table
+        order by id desc
+    </select>
+
+    <insert id="insertContact">
+        INSERT INTO
+            lout_contact_table ( nm, company, mail, msg )
+        VALUES
+            ( #{nm}, #{company}, #{mail}, #{msg} )
+        FROM
+        greensn7447.lout_contact_table
+    </insert>
+</mapper>

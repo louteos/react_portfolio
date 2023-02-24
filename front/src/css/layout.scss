@@ -125,27 +125,25 @@ li {
 
     ul li a {
         font-family: 'NanumSquareNeoB';
+        text-decoration: none;
+        padding: 0 1rem;
     }
 
-    #naviID4 {
-        padding-right: 1rem;
-    }
-
-    #naviID5 {
+    .git {
         background-color: #F7C873;
         border-radius: 20px;
         margin-right: 1rem;
         padding-right: 1rem;
     }
 
-    #naviID5 a {
+    .git a {
         color: #434343;
     }
 
-    #naviID5 a:hover {
+    .git a:hover {
         color: white;
-        transition: .5s;
     }
+        
 
     #allMenu {
         font-weight: 500;
