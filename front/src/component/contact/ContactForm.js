@@ -5,10 +5,10 @@ import axios from 'axios';
 
 function ContactForm() {
 
-    const {
-        register,
-        // handleSubmit,
-        formState: { errors }
+    const [formData, setFormData] = useState({ nm: '', company: '', mail: '', msg: '' });
+    const [isModal, setisModal] = useState(false);
+
+    const { register, formState: { errors }
     } = useForm({
         defaultValues: {
             nm: '',
@@ -19,29 +19,6 @@ function ContactForm() {
         }
     });
 
-    // const [loading, setLoading] = useState(false);
-    // const onSubmit = async (data) => {
-    //     setLoading(true);
-    //     alert(JSON.stringify(data))
-
-    //     // try{
-    //     //     const response = await axios.post('', {
-    //     //         nm,
-    //     //         company,
-    //     //         mail,
-    //     //         msg
-    //     //     });
-    //     //     console.log(resoponse);
-    //     // }catch(error){
-    //     //     alert(error.response.data);
-    //     // }
-    //     setLoading(false);
-    // };
-
-
-
-
-    const [formData, setFormData] = useState({ nm: '', company: '', mail: '', msg: '' });
 
     const dataHandler = (e) => {
         e.preventDefault();
@@ -63,24 +40,20 @@ function ContactForm() {
             })
     }
 
-
-
-    // Information Modal
-    const [isModal, setisModal] = useState(false);
-
     const modalOn = () => {
         setisModal(true);
         document.body.style.overflow = 'hidden';
     }
 
-
-
     return (
         <div className="col-10 col-lg-4 contactForm d-block">
+
             {isModal && <Modal setisModal={setisModal} />}
+            
             <div className="d-flex justify-content-center align-items-center cBox">
                 <strong class="title">CONTACT</strong>
             </div>
+
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <input type="text" className="fs fs-t" id="nm" {...register("nm", { required: true })} placeholder="NAME" value={formData.nm} onChange={dataHandler} />
@@ -92,12 +65,10 @@ function ContactForm() {
                     {errors.company && <p>회사명을 입력해주세요</p>}
                 </div>
 
-
                 <div className="form-group">
                     <input type="text" className="fs fs-t" id="mail" {...register("mail", { required: true })} placeholder="E-MAIL" value={formData.mail} onChange={dataHandler} />
                     {errors.mail && <p>메일을 입력해주세요</p>}
                 </div>
-
 
                 <div>
                     <textarea className="fs" cols="40" rows="4" name="msg" id="msg" {...register("msg")} placeholder="MESSAGE" value={formData.msg} onChange={dataHandler} />
@@ -106,7 +77,6 @@ function ContactForm() {
                 <div class="d-flex justify-content-center align-items-center text-center pt-2 infoagree">
                     <input type="checkbox" class="me-1" id="agree" {...register("agree", { required: true })} /><label for="agree" class="m-0">개인정보 수집이용 동의</label>
                     <button className="popagree" onClick={modalOn}>| 자세히 보기</button>
-
                 </div>
                 {errors.agree && <p>개인정보 수집이용에 동의해주세요</p>}
 
