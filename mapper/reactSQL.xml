@@ -15,7 +15,5 @@
             lout_contact_table ( nm, company, mail, msg )
         VALUES
             ( #{nm}, #{company}, #{mail}, #{msg} )
-        FROM
-        greensn7447.lout_contact_table
     </insert>
 </mapper>
