@@ -5,20 +5,18 @@ import axios from 'axios';
 
 function ContactForm() {
 
-    const [formData, setFormData] = useState({ nm: '', company: '', mail: '', msg: '' });
+    const [formData, setFormData] = useState([]);
     const [isModal, setisModal] = useState(false);
 
     const { register, formState: { errors }
     } = useForm({
-        defaultValues: {
-            nm: '',
-            company: '',
-            mail: '',
-            msg: '',
-            agree: ''
-        }
+        defaultValues: { nm: '', company: '', mail: '', msg: '', agree: '' }
     });
 
+    const resetForm = () => {
+        alert('감사합니다');
+        setFormData({ nm: '', company: '', mail: '', msg: '', agree: '' });
+    }
 
     const dataHandler = (e) => {
         e.preventDefault();
@@ -26,19 +24,27 @@ function ContactForm() {
         setFormData(prevState => ({ ...prevState, [name]: value }));
     }
 
-    const handleSubmit = e => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         console.log('리액트',formData);
 
         axios
-            .post('http://louteos.cafe24app.com/api/', formData)
+            .post('/api', {
+                    headers : {
+                    "Content-Type": `application/json`
+                    },              
+                    body : formData})
             .then(res => {
                 console.log(res);
+                return res.data;
             })
             .catch(error => {
                 console.error(error);
             })
+
+        resetForm();
     }
+
 
     const modalOn = () => {
         setisModal(true);

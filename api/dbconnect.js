@@ -1,66 +1,43 @@
 const express = require('express');
 const mysql = require('mysql');
 const router = express.Router();
+const dbconfig = require('../db/dbconfig');
+const conn = mysql.createPool(dbconfig);
+
 const bodyParser = require('body-parser');
-// const dbconfig = require('../db/dbconfig');
-// const conn = mysql.createPool(dbconfig);
 
 router.use(bodyParser.json());
-
-
+router.use(bodyParser.urlencoded({extended: true}));
 
 router.post('/', (req, res) => {
-   
-    var params = req.body;
 
-    var contactQuery = ` insert into
-                        lout_contact_table ( nm, company, mail, msg )
-                        values ( ?, ?, ?, ? )
-                    `
+  var param = req.body;
 
-     console.log(params);
-     res.send(contactQuery)
+  var nm = param.body.nm;
+  var company = param.body.company;
+  var mail = param.body.mail;
+  var msg = param.body.msg;
 
+  var contactQuery = ` 
+                      INSERT INTO
+                      lout_contact_table ( id, nm, company, mail, msg )
+                      VALUES ( null , '${nm}', '${company}', '${mail}', '${msg}')
+                     `
 
-    // conn.getConnection( ( err, connection ) => {
-    //   if(err) throw console.log(" 이 에러가 보인다면 dB정보 틀린거임  : " + err);
+  console.log(param)
 
-    //   connection.query(contactQuery, (error, result) => {
-    //     if(error) throw "여기 에러는 sql문 오류"+ error + result;
-    //     res.send('성공'); 
+  conn.getConnection((err, connection) => {
+    if (err) throw console.log(" 이 에러가 보인다면 dB정보 틀린거임  : " + err);
 
-    //   })
-    //   connection.release();
+    connection.query(contactQuery, [nm, company, mail, msg], (error, result) => {
+      if (error) throw "여기 에러는 sql문 오류" + error + result;
+      res.send(result);
 
-    // })
+    })
+    connection.release();
+
+  })
+
 })
-
-
-// router.get('/', (req, res)=>{
-//     var params = req.body;
-    
-//     var query = (
-//                 params.mapper,
-//                 params.mapperid,
-//                 params,
-//                 format
-//     );
-
-//     conn.getConnection ( (err, connection) => {
-//         if(err) throw
-
-//         connection.query(query, (error, result) => {
-//             if(error) throw
-            
-//             if(params.crud == ''){
-//                 res.send(result);
-//             }else(
-//                 res.send("succ")
-//             )
-//         })
-
-//         connection.release();
-//     })
-// })
 
 module.exports = router;
