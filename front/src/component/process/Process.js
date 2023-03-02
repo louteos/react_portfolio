@@ -6,25 +6,20 @@ function Process(props) {
     const process = DB.processDB;
     return (
         <Section className="text-center p-0" id={props.id}>
-            <img src="/img/process_pc.png" className='d-none d-md-flex' alt="" />
-            <img src="/img/process_m.png" className='d-flex d-md-none' alt="" />
-
-            {
-                process.map((item, index) => {
-                    return (
-                        <div className={'processbox_' + (index+1)} key={'processbox_' + index}>
-                            <table>
-                                <tr className='d-block'>
-                                    <th className='step'>{item.step}</th>
-                                    <th>{item.subject}</th>
-                                    <br />
-                                    <td>{item.text}</td>
-                                </tr>
-                            </table>
-                        </div>
-                    )
-                })
-            }
+            <div className='process_list'>
+                <div className='process_box0 col-2 border-0'></div>
+                {
+                    process.map((item, index) => {
+                        return (
+                            <div className={'col-2 processbox_' + (index + 1)} key={'processbox_' + index}>
+                                <span className='step'>{item.step}</span>
+                                <span className='subject'>{item.subject}</span>
+                                <p>{item.text}</p>
+                            </div>
+                        )
+                    })
+                }
+            </div>
         </Section>
 
     );

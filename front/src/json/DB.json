@@ -21,35 +21,34 @@
     "abilityDB": [
         {
             "Language" : [
-                { "skill": "HTML5/CSS3", "percent" : "5", "img" : "/img/ability/htmlcss.png" },
-                { "skill": "SCSS", "percent": "15", "img" : "/img/ability/sass.png" },
-                { "skill": "JavaScript", "percent": "25", "img" : "/img/ability/js.png" },
-                { "skill": "jQuery", "percent": "35", "img" : "/img/ability/jquery.png" }
+                { "skill": "HTML5/CSS3", "percent" : "5", "img" : "/img/ability/icon_htmlcss.png" },
+                { "skill": "SCSS", "percent": "15", "img" : "/img/ability/icon_sass.png" },
+                { "skill": "JavaScript", "percent": "25", "img" : "/img/ability/icon_js.png" },
+                { "skill": "jQuery", "percent": "35", "img" : "/img/ability/icon_jquery.png" }
             ],
         
             "Front" :[
-                { "skill": "React", "percent": "45", "img" : "/img/ability/react.png" }
+                { "skill": "React", "percent": "45", "img" : "/img/ability/icon_react.png" }
             ],
             
             "Back" :[
-                { "skill": "Node", "percent": "55", "img" : "/img/ability/node.png" }
+                { "skill": "Node", "percent": "55", "img" : "/img/ability/icon_node.png" }
             ],
             
             "DB" :[
-                { "skill": "mySQL", "percent": "65", "img" : "/img/ability/mysql.png" }
+                { "skill": "mySQL", "percent": "65", "img" : "/img/ability/icon_mysql.png" }
             ],
             
             "Library":[
-                { "skill": "Bootstrap", "percent": "75", "img" : "/img/ability/bootstrap.png" }
+                { "skill": "Bootstrap", "percent": "75", "img" : "/img/ability/icon_bootstrap.png" }
             ]
         },
             
         {
             "ETC": [
                 { "skill" : "Github", "img" : "/img/ability/github.png"},
-                { "skill" : "Figma", "img" : "/img/ability/figma.png"},
-                { "skill" : "Photoshop", "img" : "/img/ability/photoshop.png"},
-                { "skill" : "Notion", "img" : "/img/ability/notion.png"}
+                { "skill" : "Figma", "img" : "/img/ability/icon_figma.png"},
+                { "skill" : "Photoshop", "img" : "/img/ability/icon_photoshop.png"}
             ]
         }
     ],
@@ -67,32 +66,32 @@
     "projectDB" : [
         {
             "title" : "Portfolio",
-            "img" : "",
+            "img" : "/img/마이.jpg",
             "time" : "4주",
             "work" : "1인 개발",
             "hash" :  ["#UI/UX","#React", "#Node", "#Bootstrap", "#반응형"],
             "cls" : "pj_portfolio",
-            "href" : ["https://github.com/louteos", "https://dime4110.cafe24.com"],
+            "href" : ["https://github.com/louteos/react_portfolio", "http://louteos.cafe24app.com"],
             "ex" : "반응형 부트스트랩을 기반으로 한 싱글페이지 포트폴리오사이트입니다.\n가시성과 최적화를 중심으로 기획하였으며, React를 이용하여 작업했습니다."
         },
         {
             "title" : "한강달빛야시장",
-            "img" : "",
+            "img" : "/img/한강.jpg",
             "time" : "3주",
             "work" : "1인 개발",
-            "hash" :  ["#UI/UX","#React", "#Node", "#Styled-Component", "#반응형"],
+            "hash" :  ["#UI/UX","#React", "#Firebase", "#반응형"],
             "cls" : "pj_react",
-            "href" : ["https://github.com/louteos", "https://dime4110.cafe24.com"],
-            "ex" : "서울시 주관 한강달빛야시장의 소개페이지를 리뉴얼했습니다.\n가시성 상향을 중심으로 기획하였습니다.\nStyled Component 라이브러리를 이용하였으며, 게시판은 Node로 작업했습니다."
+            "href" : ["https://github.com/louteos/hangang", "http://louteos.cafe24app.com"],
+            "ex" : "서울시에서 주관하는 지역행사인 한강달빛야시장의 소개페이지를 리뉴얼했습니다.\n가시성 상향을 중심으로 기획하였습니다.\n게시판은 Firebase Databse를 이용하여 구축했으며 하드코딩 작업분입니다."
         },
         {
             "title" : "바른이비인후과",
-            "img" : "",
+            "img" : "/img/바른.jpg",
             "time" : "2주",
             "work" : "1인 개발",
             "hash" :  ["#UI/UX","#Gnuboard","#Bootstrap", "#반응형"],
             "cls" : "pj_sir",
-            "href" : ["https://github.com/louteos", "https://dime4110.cafe24.com"],
+            "href" : ["https://github.com/louteos", "https://dime4110.cafe24.com/barun"],
             "ex" : "경기도 광주시에 위치한 바른이비인후과 병원 사이트를 반응형웹으로 리뉴얼했습니다.\n그누보드 작업분입니다."
         }
     ],

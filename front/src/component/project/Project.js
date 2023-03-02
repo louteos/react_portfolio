@@ -11,7 +11,9 @@ import { FaGithub, FaRegFile } from "react-icons/fa";
 function Project(props) {
   const swiperDB = DB.projectDB;
   return (
-    <Section id={props.id}>
+    <Section id={props.id}  data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
       <Swiper className='workSection'
         modules={[Navigation, Pagination, A11y, Autoplay]}
         spaceBetween={65}
@@ -28,9 +30,11 @@ function Project(props) {
           swiperDB.map((item, index) =>{
             return(
               <SwiperSlide className={item.cls} key={index}>
-                <div className='d-block d-md-flex position-relative justify-content-between p-3'>
-                  <div className='slideImg col-12 col-md-6 bg-dark'>dddd</div>
-                  <div className='slideTxt col-12 col-md-4 bg-white'>
+                <div className='d-block d-lg-flex position-relative justify-content-between p-3'>
+                  <div className='slideImg col-12 col-lg-5 d-flex align-items-center'>
+                    <img src={item.img} className="img-fluid" alt={item.title} />
+                  </div>
+                  <div className='slideTxt col-12 col-lg-4 bg-white'>
                     <h2>{item.title}</h2>
                     <div className='keyword py-2 px-3'>
                       {
@@ -61,11 +65,12 @@ function Project(props) {
                         <a href={item.href[1]}><FaRegFile /></a>
                       </div>
                     </div>
-                    <button>
+                    <a href={item.href[1]}><button>
                       <div className='d-flex justify-content-between'>
                         <span>사이트 바로가기</span><span>→</span>
                       </div>
                     </button>
+                    </a>
                   </div>
                 </div>
               </SwiperSlide>

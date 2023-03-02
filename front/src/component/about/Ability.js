@@ -13,7 +13,7 @@ function Ability(props) {
     const ekeyArr = Object.values(abilityE);
 
     return(
-        <div className='abilityDiv d-flex flex-column justify-content-evenly justify-content-md-between pe-md-5'>
+        <div className='abilityDiv d-flex flex-column justify-content-evenly justify-content-md-between'>
 
             <div className='mainSkill col'>
 
@@ -24,7 +24,7 @@ function Ability(props) {
                     valArr.map((item,index)=>{
                         return(
                             <div className='main'>
-                                <span key={index}>{keyArr[index]}</span>
+                                <span key={index} class="d-none d-md-block">{keyArr[index]}</span>
                                 
                                 {
                                     item.map((k,i)=>{
@@ -34,7 +34,7 @@ function Ability(props) {
                                                     <img src={k.img}></img>
                                                     <span>{k.skill}</span>
                                                 </div>
-                                                <div className='progress col-8'>
+                                                <div className='progress col-7 col-md-8'>
                                                     <div className='progress-bar' style={ {width: `${k.percent}%`} } aria-valuenow={k.percent} aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span>{k.percent}%</span>
@@ -52,7 +52,7 @@ function Ability(props) {
             <div className='etcSkill col'>
                 <div className='titlebox text-center'><strong class='title'>ETC.</strong></div>
                 
-                <div className='skills d-flex justify-content-between'>
+                <div className='skills d-flex justify-content-evenly mx-auto col-7'>
 
                     {
                         ekeyArr.map((x,y)=>{
