@@ -21,22 +21,22 @@
     "abilityDB": [
         {
             "Language" : [
-                { "skill": "HTML5/CSS3", "percent" : "5", "img" : "/img/ability/icon_htmlcss.png" },
-                { "skill": "SCSS", "percent": "15", "img" : "/img/ability/icon_sass.png" },
-                { "skill": "JavaScript", "percent": "25", "img" : "/img/ability/icon_js.png" },
-                { "skill": "jQuery", "percent": "35", "img" : "/img/ability/icon_jquery.png" }
+                { "skill": "HTML5/CSS3", "percent" : "75", "img" : "/img/ability/icon_htmlcss.png" },
+                { "skill": "SCSS", "percent": "75", "img" : "/img/ability/icon_sass.png" },
+                { "skill": "JavaScript", "percent": "75", "img" : "/img/ability/icon_js.png" },
+                { "skill": "jQuery", "percent": "75", "img" : "/img/ability/icon_jquery.png" }
             ],
         
             "Front" :[
-                { "skill": "React", "percent": "45", "img" : "/img/ability/icon_react.png" }
+                { "skill": "React", "percent": "75", "img" : "/img/ability/icon_react.png" }
             ],
             
             "Back" :[
-                { "skill": "Node", "percent": "55", "img" : "/img/ability/icon_node.png" }
+                { "skill": "Node", "percent": "75", "img" : "/img/ability/icon_node.png" }
             ],
             
             "DB" :[
-                { "skill": "mySQL", "percent": "65", "img" : "/img/ability/icon_mysql.png" }
+                { "skill": "mySQL", "percent": "75", "img" : "/img/ability/icon_mysql.png" }
             ],
             
             "Library":[
@@ -46,7 +46,7 @@
             
         {
             "ETC": [
-                { "skill" : "Github", "img" : "/img/ability/github.png"},
+                { "skill" : "Github", "img" : "/img/ability/icon_github.png"},
                 { "skill" : "Figma", "img" : "/img/ability/icon_figma.png"},
                 { "skill" : "Photoshop", "img" : "/img/ability/icon_photoshop.png"}
             ]
@@ -58,7 +58,7 @@
         { "step": "01", "subject": "기획 및 디자인", "text": "최적화와 유지보수, 협업을 위한 효율적인 커스터마이징으로 화면 구현" },
         { "step": "02", "subject": "DB아키텍처 설계", "text": "유지보수를 위한 효율적인 데이터베이스 구조 설계" },
         { "step": "03", "subject": "퍼블리싱", "text": "커스터마이징을 최소화한 프레임워크의 선정" },
-        { "step": "04", "subject": "커스터마이징", "text": "주요 속성값은 클래스로 처리하여 빠른 수정이 가능하게 하고, 협업을 위하여 플러그인, 프레임워크 기본스타일과 자바스타일은 수정하지 않도록 함" },
+        { "step": "04", "subject": "커스터마이징", "text": "주요 속성값은 클래스로 처리go 속도를 높이고, 협업을 위해 프레임워크 기본·자바스타일은 수정하지 않도록 함" },
         { "step": "05", "subject": "배포 및 유지보수", "text": "테스트, 디버깅 후 웹사이트를 유지보수할 수 있는 메뉴얼 배포" }
     ],
 
@@ -66,7 +66,7 @@
     "projectDB" : [
         {
             "title" : "Portfolio",
-            "img" : "/img/마이.jpg",
+            "img" : "/img/project/mypage.jpg",
             "time" : "4주",
             "work" : "1인 개발",
             "hash" :  ["#UI/UX","#React", "#Node", "#Bootstrap", "#반응형"],
@@ -76,23 +76,23 @@
         },
         {
             "title" : "한강달빛야시장",
-            "img" : "/img/한강.jpg",
+            "img" : "/img/project/hangang.jpg",
             "time" : "3주",
             "work" : "1인 개발",
             "hash" :  ["#UI/UX","#React", "#Firebase", "#반응형"],
             "cls" : "pj_react",
             "href" : ["https://github.com/louteos/hangang", "http://louteos.cafe24app.com"],
-            "ex" : "서울시에서 주관하는 지역행사인 한강달빛야시장의 소개페이지를 리뉴얼했습니다.\n가시성 상향을 중심으로 기획하였습니다.\n게시판은 Firebase Databse를 이용하여 구축했으며 하드코딩 작업분입니다."
+            "ex" : "서울시에서 주관하는 지역행사인 한강달빛야시장의 소개페이지를 가시성 상향을 중심으로 리뉴얼했습니다.\n게시판은 Firebase Databse를 이용하여 구축했으며 css 하드코딩 작업분입니다."
         },
         {
             "title" : "바른이비인후과",
-            "img" : "/img/바른.jpg",
+            "img" : "/img/project/barun.jpg",
             "time" : "2주",
             "work" : "1인 개발",
             "hash" :  ["#UI/UX","#Gnuboard","#Bootstrap", "#반응형"],
             "cls" : "pj_sir",
             "href" : ["https://github.com/louteos", "https://dime4110.cafe24.com/barun"],
-            "ex" : "경기도 광주시에 위치한 바른이비인후과 병원 사이트를 반응형웹으로 리뉴얼했습니다.\n그누보드 작업분입니다."
+            "ex" : "경기도 광주시에 위치한 바른이비인후과 병원 사이트를 반응형웹으로 리뉴얼했습니다.\n그누보드 베이직스킨 커스터마이징 작업분입니다."
         }
     ],
 

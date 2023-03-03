@@ -6,12 +6,12 @@ function Process(props) {
     const process = DB.processDB;
     return (
         <Section className="text-center p-0" id={props.id}>
-            <div className='process_list'>
+            <div className='process_list d-lg-flex'>
                 <div className='process_box0 col-2 border-0'></div>
                 {
                     process.map((item, index) => {
                         return (
-                            <div className={'col-2 processbox_' + (index + 1)} key={'processbox_' + index}>
+                            <div className={'col-lg-2 processbox_' + (index + 1)} key={'processbox_' + index}>
                                 <span className='step'>{item.step}</span>
                                 <span className='subject'>{item.subject}</span>
                                 <p>{item.text}</p>

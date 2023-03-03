@@ -339,25 +339,53 @@ li {
 // process
 #process{
     background-color: #DCD5CF;
-    background-image: url('../../public/img/process_pc.png');
     background-repeat: no-repeat;
     background-position-y: bottom;
-    background-size: 70%;
     color: white;
 
-    @media(max-width: 767px){
-        background-size: 120%;
-        background-position-x: center;
+    .process_list{
+        position: relative;
+        text-align: left;
+        flex-wrap: wrap;
     }
 
-    @media(min-width: 768px){
+    span{
+        font-size: 1.2rem;
+    }
+
+    p{
+        color: #434343;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    span.step{
+        font-size: 2rem;
+        margin-right: .5rem;
+        text-decoration: underline;
+        text-underline-offset: 8px;
+    }
+
+    @media(max-width: 991px){
+        background-image: url('../../public/img/process_m.png');
+        background-size: 110%;
+        background-position-x: center;
+
+        .process_list{
+            padding: 0 10%;
+            top: 15%;
+        }
+    }
+
+    @media(min-width: 992px){
+        background-image: url('../../public/img/process_pc.png');
+        background-size: 70%;
+
         .process_list{
             position: relative;
-            display: flex;
         }
 
         .process_list > div{
-            
             padding: 1.5rem;
             border: 1px solid white;
         }
@@ -381,20 +409,6 @@ li {
         // .processbox_5{
             
         // }
-
-        span{
-            font-size: 1.3rem;
-        }
-
-        p{
-            font-size: 1rem;
-        }
-
-        span.step{
-            font-size: 2rem;
-            text-decoration: underline;
-            text-underline-offset: 8px;
-        }
     }
     
 }
