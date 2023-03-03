@@ -4,7 +4,6 @@ import Navi from './Navi';
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header(props){
-  const targetRef = useRef(null); 
   const [isMobile, setisMobile ] = useState(false);
   const [naviOpen, setnaviOpen ] = useState(false);
 
@@ -29,13 +28,13 @@ function Header(props){
   }, []);
   
     return(
-        <header ref={targetRef} id="hd" className="d-flex justify-content-between align-items-center px-lg-5 fixed-top">
+        <header id="hd" className="d-flex justify-content-between align-items-center px-lg-5 fixed-top">
           <h1 className="mb-0">
-            <a href={targetRef} className="d-block">
+            <a href="/" className="d-block">
               <Logo></Logo>
             </a>
           </h1>
-          <button className='btn d-md-none' id="allMenu" onClick={ e => {               
+          <button className='btn d-lg-none' id="allMenu" onClick={ e => {               
             setnaviOpen(!naviOpen)
             console.log(naviOpen)
             

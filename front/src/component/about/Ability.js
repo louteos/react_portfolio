@@ -1,10 +1,7 @@
 import DB from '../../json/DB.json';
 import React from 'react';
-import { useState } from 'react';
 
 function Ability(props) {
-
-    const [percent, updatePercent] = useState(0);
 
     const ability = DB.abilityDB[0];
     const abilityE = DB.abilityDB[1].ETC;
@@ -13,7 +10,7 @@ function Ability(props) {
     const ekeyArr = Object.values(abilityE);
 
     return(
-        <div className='abilityDiv d-flex flex-column justify-content-evenly justify-content-md-between'>
+        <div className='abilityDiv d-flex flex-column justify-content-evenly justify-content-lg-between'>
 
             <div className='mainSkill col'>
 
@@ -34,8 +31,8 @@ function Ability(props) {
                                                     <img src={k.img}></img>
                                                     <span>{k.skill}</span>
                                                 </div>
-                                                <div className='progress col-7 col-md-8'>
-                                                    <div className='progress-bar' style={ {width: `${k.percent}%`} } aria-valuenow={k.percent} aria-valuemin="0" aria-valuemax="100"></div>
+                                                <div className='progress col-7 col-lg-8'>
+                                                    <div className={'progress-bar progress-bar-' + `${k.percent}` } aria-valuenow={k.percent} aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
                                                 <span>{k.percent}%</span>
                                             </div>

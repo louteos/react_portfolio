@@ -3,21 +3,17 @@ import { Section } from 'react-fullpage';
 import DB from '../../json/DB.json';
 import Ability from './Ability';
 import { FaHome, FaComment } from "react-icons/fa";
-import { useEffect } from 'react';
 
 function About(props) {
     const about = DB.aboutDB;
-
-
 
     return (
         <Section id={props.id}>
 
             <div className='d-block d-md-flex justify-content-center'>
-                <div className='aboutdiv d-flex flex-column justify-content-between col-12 col-md-5'>
+                <div className='aboutdiv d-flex flex-column justify-content-between col-12 col-lg-5'>
                     <div className='titlebox text-center'>
                         <strong className="title">ABOUT ME</strong>
-
                         <table>
                             <tbody>
                                 {
@@ -35,7 +31,7 @@ function About(props) {
                         </table>
                         <div className='d-flex justify-content-evenly icongroup'>
                             <a href=""><FaHome /></a>
-                            <a href=""><FaComment /></a>
+                            <a href="https://open.kakao.com/o/s0TReP7e"><FaComment /></a>
                         </div>
                     </div>
                     <div className='d-none d-md-block mb-3 mb-md-0'>
@@ -51,7 +47,7 @@ function About(props) {
 
                 
 
-                <div className='skilldiv titlebox d-block col-12 col-md-5 text-cetner'>
+                <div className='skilldiv titlebox d-block col-12 col-lg-5 text-cetner'>
                     <Ability></Ability>
                 </div>
             </div>
