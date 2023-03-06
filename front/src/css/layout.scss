@@ -471,17 +471,6 @@ li {
         text-underline-offset: 8px;
     }
 
-    //모니터 대형
-    @media(min-width: 1601px) {
-        .process_list>div {
-            padding: 1.5rem;
-            border: 1px solid white;
-            width: 14vw;
-            height: 23vh;
-            max-height: none;
-        }
-    }
-
     //모니터 중간
     @media(min-width: 992px) {
         background-image: url('../../public/img/process_pc.png');
@@ -534,6 +523,17 @@ li {
 
         .processbox_5 {
             transform: translate(-60%, -10%);
+        }
+    }
+
+        //모니터 대형
+    @media(min-width: 1601px) {
+        .process_list>div {
+            padding: 1.5rem;
+            border: 1px solid white;
+            width: 14vw;
+            height: 23vh;
+            max-height: none;
         }
     }
 
