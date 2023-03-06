@@ -10,7 +10,7 @@ function About(props) {
     return (
         <Section id={props.id}>
 
-            <div className='d-block d-md-flex justify-content-center'>
+            <div className='d-block d-lg-flex justify-content-center'>
                 <div className='aboutdiv d-flex flex-column justify-content-between col-12 col-lg-5'>
                     <div className='titlebox text-center'>
                         <strong className="title">ABOUT ME</strong>
@@ -31,10 +31,10 @@ function About(props) {
                         </table>
                         <div className='d-flex justify-content-evenly icongroup'>
                             <a href=""><FaHome /></a>
-                            <a href="https://open.kakao.com/o/s0TReP7e"><FaComment /></a>
+                            <a href="https://open.kakao.com/o/s0TReP7e" target="_blank"><FaComment /></a>
                         </div>
                     </div>
-                    <div className='d-none d-md-block mb-3 mb-md-0'>
+                    <div className='d-none d-lg-block mb-3 mb-lg-0'>
                         <div className='titlebox text-center d-block'>
                             <strong class="title">TAG</strong>
                         </div>

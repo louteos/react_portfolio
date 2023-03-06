@@ -34,7 +34,7 @@ function Header(props){
               <Logo></Logo>
             </a>
           </h1>
-          <button className='btn d-lg-none' id="allMenu" onClick={ e => {               
+          <button className='btn d-md-none' id="allMenu" onClick={ e => {               
             setnaviOpen(!naviOpen)
             console.log(naviOpen)
             
