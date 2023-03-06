@@ -423,21 +423,72 @@ li {
         text-underline-offset: 8px;
     }
 
-    @media(max-width: 767px){
-        background-image: url('../../public/img/process_m.png');
-        background-size: 120%;
-        background-position-x: center;
-
-        .process_list{
-            padding: 0 10%;
-            top: 20%;
+        //모니터 공통
+        @media(min-width: 992px){
+            background-image: url('../../public/img/process_pc.png');
+            background-size: 70%;
+    
+            .process_list{
+                position: relative;
+            }
+    
+            .process_list > div{
+                padding: 1.5rem;
+                border: 1px solid white;
+                width: 14vw;
+                height: 23vh;
+            }
+    
+            .processbox_1{
+                transform: translate(-40%,-70%);
+            }
+    
+            .processbox_2{
+                transform: translate(-45%,-120%);
+            }
+    
+            .processbox_3{
+                transform: translate(-50%, -40%);
+            }
+    
+            .processbox_4{
+                transform: translate(-55%, 40%);
+            }
+    
+            .processbox_5{
+                transform: translate(-60%, -10%);
+            }
         }
 
+    //모니터 중간
+    @media(min-width: 992px){
         .process_list > div{
-            margin: 2rem 0;
+            padding: 1.2rem;
+            width: 13vw;
+            min-width: 200px;
+            height: 23vh;
+            max-height: 200px;
+        }
+
+        span{
+            font-size: 1.1rem;
+        }
+    
+        p{
+            color: #434343;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+    
+        span.step{
+            font-size: 1.8rem;
+            margin-right: .5rem;
+            text-decoration: underline;
+            text-underline-offset: 8px;
         }
     }
 
+    //태블릿
     @media(max-width: 991px){
         background-image: url('../../public/img/process_m.png');
         background-size: 110%;
@@ -453,39 +504,22 @@ li {
         }
     }
 
-    @media(min-width: 992px){
-        background-image: url('../../public/img/process_pc.png');
-        background-size: 70%;
+    //모바일
+    @media(max-width: 767px){
+        background-image: url('../../public/img/process_m.png');
+        background-size: 120%;
+        background-position-x: center;
 
         .process_list{
-            position: relative;
+            padding: 0 10%;
+            top: 15%;
         }
 
         .process_list > div{
-            padding: 1.5rem;
-            border: 1px solid white;
+            margin: 2rem 0;
         }
-
-        .processbox_1{
-            transform: translateY(90%);
-        }
-
-        // .processbox_2{
-            
-        // }
-
-        // .processbox_3{
-            
-        // }
-
-        // .processbox_4{
-            
-        // }
-
-        // .processbox_5{
-            
-        // }
     }
+
     
 }
 

@@ -5,9 +5,8 @@ import React from 'react';
 function Process(props) {
     const process = DB.processDB;
     return (
-        <Section className="text-center p-0" id={props.id}>
+        <Section className="text-center p-0 d-lg-flex justify-content-lg-end align-items-lg-center" id={props.id}>
             <div className='process_list d-lg-flex'>
-                <div className='process_box0 col-2 border-0'></div>
                 {
                     process.map((item, index) => {
                         return (
