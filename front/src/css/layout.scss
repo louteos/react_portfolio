@@ -31,7 +31,7 @@
     font-size: 16px;
     letter-spacing: -0.083em;
 
-    @media(max-width:767px){
+    @media(max-width:767px) {
         font-size: 10px;
     }
 }
@@ -101,7 +101,7 @@ li {
         svg {
             height: 3rem;
 
-            @media(max-width:767px){
+            @media(max-width:767px) {
                 height: 4rem;
             }
 
@@ -148,7 +148,7 @@ li {
     #naviID5 a:hover {
         color: white;
     }
-        
+
 
     #allMenu {
         font-weight: 500;
@@ -177,12 +177,14 @@ li {
             padding: 0 !important;
             margin: 0 !important;
             background: none !important;
+            font-size: 3rem;
         }
 
         a {
             color: white !important;
             padding: 0 !important;
             margin: 0 !important;
+            font-size: 2rem;
         }
 
         &:before,
@@ -217,7 +219,7 @@ li {
         min-width: 350px;
         margin: .5rem 0;
 
-        @media(max-width:767px){
+        @media(max-width:767px) {
             font-size: 4rem;
         }
     }
@@ -264,16 +266,16 @@ li {
 
     overflow-x: hidden !important;
 
-    .skilldiv{
-        @media(max-width:767px){
+    .skilldiv {
+        @media(max-width:991px) {
             width: 95%;
             margin: auto;
             padding-top: 2rem;
         }
     }
-    
-    .etcSkill{
-        @media(max-width:767px){
+
+    .etcSkill {
+        @media(max-width:767px) {
             padding-top: 1rem;
         }
     }
@@ -283,7 +285,7 @@ li {
         width: 100%;
     }
 
-    .main>div>span{
+    .main>div>span {
         font-size: .8rem;
         color: #DCD5CF;
         transform: translateY(.5rem);
@@ -312,11 +314,17 @@ li {
         }
     }
 
-    .mainSkill .skillName{
+    .mainSkill .skillName {
         min-width: 9rem;
     }
 
-    .etcSkill .skillName{
+    .mainSkill .skills{
+        @media(max-width: 991px){
+            transform: translateX(5%);
+        }
+    }
+
+    .etcSkill .skillName {
         min-width: 7.5rem;
     }
 
@@ -338,9 +346,17 @@ li {
         animation-delay: 5s;
 
         @keyframes progress-bar-50 {
-            0% { width: 0%; }
-            50% { width: 50%; }
-            100% { width: 50%; }
+            0% {
+                width: 0%;
+            }
+
+            50% {
+                width: 50%;
+            }
+
+            100% {
+                width: 50%;
+            }
         }
     }
 
@@ -349,9 +365,17 @@ li {
         animation-delay: 5s;
 
         @keyframes progress-bar-65 {
-            0% { width: 0%; }
-            50% { width: 65%; }
-            100% { width: 65%; }
+            0% {
+                width: 0%;
+            }
+
+            50% {
+                width: 65%;
+            }
+
+            100% {
+                width: 65%;
+            }
         }
     }
 
@@ -360,20 +384,36 @@ li {
         animation-delay: 5s;
 
         @keyframes progress-bar-75 {
-            0% { width: 0%; }
-            50% { width: 75%; }
-            100% { width: 75%; }
+            0% {
+                width: 0%;
+            }
+
+            50% {
+                width: 75%;
+            }
+
+            100% {
+                width: 75%;
+            }
         }
     }
-      
+
     .progress-bar-80 {
         animation: progress-bar-80 5s ease-out forwards infinite;
         animation-delay: 5s;
 
         @keyframes progress-bar-80 {
-            0% { width: 0%; }
-            50% { width: 80%; }
-            100% { width: 80%; }
+            0% {
+                width: 0%;
+            }
+
+            50% {
+                width: 80%;
+            }
+
+            100% {
+                width: 80%;
+            }
         }
     }
 
@@ -382,9 +422,17 @@ li {
         animation-delay: 5s;
 
         @keyframes progress-bar-90 {
-            0% { width: 0%; }
-            50% { width: 90%; }
-            100% { width: 90%; }
+            0% {
+                width: 0%;
+            }
+
+            50% {
+                width: 90%;
+            }
+
+            100% {
+                width: 90%;
+            }
         }
     }
 
@@ -394,75 +442,56 @@ li {
 }
 
 // process
-#process{
+#process {
     background-color: #DCD5CF;
     background-repeat: no-repeat;
     background-position-y: bottom;
     color: white;
 
-    .process_list{
+    .process_list {
         position: relative;
         text-align: left;
         flex-wrap: wrap;
     }
 
-    span{
+    span {
         font-size: 1.2rem;
     }
 
-    p{
+    p {
         color: #434343;
         font-size: 1rem;
         margin-top: 1rem;
     }
 
-    span.step{
+    span.step {
         font-size: 2rem;
         margin-right: .5rem;
         text-decoration: underline;
         text-underline-offset: 8px;
     }
 
-        //모니터 공통
-        @media(min-width: 992px){
-            background-image: url('../../public/img/process_pc.png');
-            background-size: 70%;
-    
-            .process_list{
-                position: relative;
-            }
-    
-            .process_list > div{
-                padding: 1.5rem;
-                border: 1px solid white;
-                width: 14vw;
-                height: 23vh;
-            }
-    
-            .processbox_1{
-                transform: translate(-40%,-70%);
-            }
-    
-            .processbox_2{
-                transform: translate(-45%,-120%);
-            }
-    
-            .processbox_3{
-                transform: translate(-50%, -40%);
-            }
-    
-            .processbox_4{
-                transform: translate(-55%, 40%);
-            }
-    
-            .processbox_5{
-                transform: translate(-60%, -10%);
-            }
+    //모니터 대형
+    @media(min-width: 1601px) {
+        .process_list>div {
+            padding: 1.5rem;
+            border: 1px solid white;
+            width: 14vw;
+            height: 23vh;
+            max-height: none;
         }
+    }
 
     //모니터 중간
-    @media(min-width: 992px){
-        .process_list > div{
+    @media(min-width: 992px) {
+        background-image: url('../../public/img/process_pc.png');
+        background-size: 70%;
+
+        .process_list {
+            position: relative;
+        }
+
+        .process_list>div {
             padding: 1.2rem;
             width: 13vw;
             min-width: 200px;
@@ -470,63 +499,83 @@ li {
             max-height: 200px;
         }
 
-        span{
+        span {
             font-size: 1.1rem;
         }
-    
-        p{
+
+        p {
             color: #434343;
             font-size: 0.9rem;
             margin-top: 1rem;
         }
-    
-        span.step{
+
+        span.step {
             font-size: 1.8rem;
             margin-right: .5rem;
             text-decoration: underline;
             text-underline-offset: 8px;
         }
+
+        .processbox_1 {
+            transform: translate(-40%, -70%);
+        }
+
+        .processbox_2 {
+            transform: translate(-45%, -120%);
+        }
+
+        .processbox_3 {
+            transform: translate(-50%, -40%);
+        }
+
+        .processbox_4 {
+            transform: translate(-55%, 40%);
+        }
+
+        .processbox_5 {
+            transform: translate(-60%, -10%);
+        }
     }
 
     //태블릿
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
         background-image: url('../../public/img/process_m.png');
         background-size: 110%;
         background-position-x: center;
 
-        .process_list{
+        .process_list {
             padding: 0 10%;
             top: 15%;
         }
 
-        .process_list > div{
+        .process_list>div {
             margin: 2rem 0;
         }
     }
 
     //모바일
-    @media(max-width: 767px){
+    @media(max-width: 767px) {
         background-image: url('../../public/img/process_m.png');
         background-size: 120%;
         background-position-x: center;
 
-        .process_list{
+        .process_list {
             padding: 0 10%;
             top: 15%;
         }
 
-        .process_list > div{
+        .process_list>div {
             margin: 2rem 0;
         }
     }
 
-    
+
 }
 
 // swiper
 #project {
 
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
         h2 {
             margin-top: 2rem;
         }
@@ -577,7 +626,7 @@ li {
         background: #F7C873 !important;
     }
 
-    .keyword{
+    .keyword {
         display: flex;
         flex-wrap: wrap;
     }
@@ -626,7 +675,7 @@ li {
         line-height: 3;
         transition: .5s;
 
-        @media(max-width: 768px){
+        @media(max-width: 768px) {
             width: 40%;
             min-width: 120px;
         }
@@ -636,7 +685,7 @@ li {
             padding: 0 1rem;
         }
 
-        &:hover{
+        &:hover {
             background: #FAEBCD;
         }
     }
@@ -645,8 +694,8 @@ li {
 // interview
 #preinterview {
 
-    @media(min-width:992px){
-        >div{
+    @media(min-width:992px) {
+        >div {
             width: 60%;
         }
     }
@@ -686,7 +735,7 @@ li {
         margin: 0;
     }
 
-    p.d-none{
+    p.d-none {
         display: none !important;
     }
 
@@ -705,13 +754,14 @@ li {
 
 // contact form
 #contact {
-    &>div>div{
+    &>div>div {
         margin: auto;
     }
 
-    &>div>div{
+    &>div>div {
         max-height: 600px;
     }
+
     .cBox {
         padding: 1rem 0;
     }
@@ -752,13 +802,13 @@ li {
         color: #bf1650;
         float: left;
     }
-      
+
     p::before {
         display: inline;
         content: "⚠ ";
     }
 
-    .infoagree + p{
+    .infoagree+p {
         float: unset;
     }
 
@@ -842,7 +892,7 @@ li {
         font-weight: 600;
     }
 
-    .popagree{
+    .popagree {
         background: none;
         border: none;
         color: #DCD5CF;
@@ -852,20 +902,25 @@ li {
 }
 
 // modal
-.popup_bg{
-    width: 100vw; height: 100vh;
-    background-color: rgba(0,0,0,0.5);
+.popup_bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
     transform: translate(-2rem, -15.6rem);
 }
 
-.popup{
+.popup {
     position: absolute;
-    top: 50%; left: 50%; transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 2rem 3rem;
-    width: 50%; height: auto;
+    width: 50%;
+    height: auto;
 
-    @media(max-width:767px){
-        width: 70%; height: 70%;
+    @media(max-width:767px) {
+        width: 70%;
+        height: 70%;
     }
 
     background-color: white;
@@ -874,10 +929,10 @@ li {
     overflow: scroll;
     z-index: 2000;
 
-    button{
+    button {
         display: flex;
         margin: auto;
-        border: 1px solid rgba(0,0,0,0.3);
+        border: 1px solid rgba(0, 0, 0, 0.3);
         padding: .3rem 1rem;
         background-color: white;
     }
@@ -888,8 +943,8 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-transition: background-color 5000s;
--webkit-background-fill-color: #fff !important;
+    transition: background-color 5000s;
+    -webkit-background-fill-color: #fff !important;
 }
 
 strong.title {

@@ -49,7 +49,7 @@ function Ability(props) {
             <div className='etcSkill col'>
                 <div className='titlebox text-center'><strong class='title'>ETC.</strong></div>
                 
-                <div className='skills d-flex justify-content-evenly mx-auto col-7'>
+                <div className='skills d-flex justify-content-evenly'>
 
                     {
                         ekeyArr.map((x,y)=>{
