@@ -30,7 +30,7 @@ function About(props) {
                             </tbody>
                         </table>
                         <div className='d-flex justify-content-evenly icongroup'>
-                            <a href=""><FaHome /></a>
+                            <a href="https://louteos.notion.site/Develope-dd0d24ed9fae4e8fb77534da6ec66d9c" target="_blank"><FaHome /></a>
                             <a href="https://open.kakao.com/o/s0TReP7e" target="_blank"><FaComment /></a>
                         </div>
                     </div>

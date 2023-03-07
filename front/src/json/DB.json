@@ -71,7 +71,7 @@
             "work" : "1인 개발",
             "hash" :  ["#UI/UX","#React", "#Node", "#Bootstrap", "#반응형"],
             "cls" : "pj_portfolio",
-            "href" : ["https://github.com/louteos/react_portfolio", "http://louteos.cafe24app.com"],
+            "href" : ["https://github.com/louteos/react_portfolio", "https://louteos.notion.site/My-Portfolio-52b63f24aacc4a32af44e3bd839c1a0d"],
             "ex" : "반응형 부트스트랩을 기반으로 한 싱글페이지 포트폴리오사이트입니다.\n가시성과 최적화를 중심으로 기획하였으며, React를 이용하여 작업했습니다."
         },
         {
@@ -81,7 +81,7 @@
             "work" : "1인 개발",
             "hash" :  ["#UI/UX","#React", "#Firebase", "#반응형"],
             "cls" : "pj_react",
-            "href" : ["https://github.com/louteos/hangang", "http://louteos.cafe24app.com"],
+            "href" : ["https://github.com/louteos/hangang", "https://louteos.notion.site/c772528421da4fafab0d337bc605364a"],
             "ex" : "서울시에서 주관하는 지역행사인 한강달빛야시장의 소개페이지를 가시성 상향을 중심으로 리뉴얼했습니다.\n게시판은 Firebase Databse를 이용하여 구축했으며 css 하드코딩 작업분입니다."
         },
         {
@@ -91,7 +91,7 @@
             "work" : "1인 개발",
             "hash" :  ["#UI/UX","#Gnuboard","#Bootstrap", "#반응형"],
             "cls" : "pj_sir",
-            "href" : ["https://github.com/louteos", "https://dime4110.cafe24.com/barun"],
+            "href" : ["https://github.com/louteos", "https://louteos.notion.site/57426c099152412db2d4f74151ddc797"],
             "ex" : "경기도 광주시에 위치한 바른이비인후과 병원 사이트를 반응형웹으로 리뉴얼했습니다.\n그누보드 베이직스킨 커스터마이징 작업분입니다."
         }
     ],
